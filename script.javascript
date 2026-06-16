@@ -2,7 +2,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-  const ctx = document.getElementById('barrasAgrupadas').getContext('2d');
+  const ctx = document.getElementById('dispersion').getContext('2d');
 
   new Chart(ctx, {
     type: 'bar',

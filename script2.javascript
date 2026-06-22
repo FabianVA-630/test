@@ -1,8 +1,8 @@
-<canvas id="grafico3"></canvas>
+<canvas id="otro"></canvas>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-  const ctx = document.getElementById('grafico3').getContext('2d');
+  const ctx = document.getElementById('otro').getContext('2d');
 
   new Chart(ctx, {
     type: 'bar',

@@ -902,5 +902,35 @@
     }
   });
 </script>
+<script>
+    const t = document.querySelector("#este");
+    const URL = "https://api.myjson.online/v1/records/79b42724-6936-4c77-a4b6-0f6d059162f2";
+
+    fetch(URL)
+        .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(datos => {
+            datos.data.forEach(x => {
+                t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}">
+                    <td>${x.Electivo}</td>
+                    <td>${x.Mención}</td>
+                    <td>${x.Subgrupo}</td>
+                    <td>${x.Créditos}</td>
+                    <td>${x["Área Temática"]}</td>
+                </tr>`;
+            });
+        })
+        .catch(e => console.error("Error:", e));
+
+    function sinAcentos(str) {
+        return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
+
+    document.getElementById("elInput").addEventListener("keyup", function () {
+        const valor = sinAcentos(this.value.toLowerCase());
+        document.querySelectorAll("#este tr").forEach(fila => {
+            fila.style.display = sinAcentos(fila.textContent.toLowerCase()).includes(valor) ? "" : "none";
+        });
+    });
+</script>
     </body>
 </html>

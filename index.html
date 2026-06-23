@@ -114,7 +114,7 @@
 }
 .tabla-resumen .fila-total td {
   font-weight: 600;
-  border-bottom: none;
+  border-bottom: 1px solid #e0e0e0;
 }
 </style>			
 <p>Este vacío de información es relevante para el análisis: no solo existe un desbalance entre las áreas que sí fueron definidas, sino que la mayoría de la oferta real del catálogo queda completamente fuera de cualquier clasificación temática, lo que limita cuánto se puede concluir sobre la estructura completa de la oferta.</p>
@@ -673,11 +673,75 @@
 			</figure>
 				<p>El diagrama aluvial resultó la forma más adecuada de visualizar esta información porque permite seguir cada uno de los 75 electivos de forma individual a través de dos dimensiones a la vez, mención y grupo temático, sin perder el detalle de los casos particulares, incluyendo aquellos que cruzan más de una agrupación. A diferencia de un gráfico de barras, donde los electivos se funden en una cifra agregada, el aluvial conserva el origen y destino de cada hebra, haciendo visibles tanto los patrones generales como las excepciones.</p>
 			
-				<p>Al observar el gráfico, se hace evidente que la categoría más numerosa entre los electivos clasificados es la de Ambas menciones, aunque por un margen pequeño respecto a las otras dos: 27 asignaciones corresponden a esta categoría, frente a 24 de la Mención I y S y 24 de la Mención V y M. Cabe señalar que entre estos 27 se encuentra uno de los tres electivos transversales del catálogo, asignado simultáneamente a Gestión y Fabricación Avanzada y Territorios y Ciudadanías, por lo que aparece duplicado en el conteo del gráfico anterior, que agrupa la información a nivel de las cuatro grandes áreas temáticas.</p>
-			
-                <p>Dado que esta categoría agrupa al subconjunto más amplio, decidimos profundizar en su composición interna, diseccionando estos electivos transversales según los subgrupos de las mismas áreas temáticas, para entender con mayor precisión en qué áreas se concentra la oferta compartida entre menciones. En este desglose por subgrupo, el electivo transversal ya no se duplica ya que pertenece a un único subgrupo específico dentro de cada área, lo que deja un total de 26 electivos distribuidos en 9 de los 12 subgrupos posibles.</p>
+				<p>Al observar el gráfico, se hace evidente que la categoría más numerosa entre los electivos clasificados es la de Ambas menciones, aunque por un margen pequeño respecto a las otras dos:</p>
+			<table class="tabla-resumen">
+  <thead>
+    <tr>
+      <th>Mención</th>
+      <th>Asignaciones</th>
+      <th>% del total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ambas menciones</td>
+      <td>27</td>
+      <td>36%</td>
+    </tr>
+    <tr>
+      <td>Mención I y S</td>
+      <td>24</td>
+      <td>32%</td>
+    </tr>
+    <tr>
+      <td>Mención V y M</td>
+      <td>24</td>
+      <td>32%</td>
+    </tr>
+  </tbody>
+</table>
+<p class="nota-transversal">
+  Uno de los 27 electivos de "Ambas menciones" es transversal: pertenece simultáneamente a
+  <strong>Gestión y Fabricación Avanzada</strong> y <strong>Territorios y Ciudadanías</strong>,
+  por lo que se duplica en el conteo por área temática.
+</p>
 
-				<p>También se puede rescatar que 3 de estos 12 subgrupos no contienen ningún electivo de Ambas menciones. Es decir, hay áreas temáticas específicas del catálogo donde la oferta compartida entre menciones es completamente inexistente, lo que sugiere que la transversalidad entre Industrial/Servicios y Visual/Multimedial no está distribuida de forma pareja entre todos los subgrupos, sino concentrada en ciertos nichos temáticos como Diseño Social y Metodologías Inclusivas, los cuales cuentan con 5 electivos mientras otros quedan completamente fuera de ese cruce disciplinar.</p>
+<style>
+.tabla-resumen {
+  width: 100%;
+  max-width: 480px;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 1.5rem 0 0.5rem;
+}
+.tabla-resumen th {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: 500;
+  color: #555;
+}
+.tabla-resumen th:not(:first-child),
+.tabla-resumen td:not(:first-child) {
+  text-align: right;
+}
+.tabla-resumen td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.nota-transversal {
+  max-width: 480px;
+  font-size: 12.5px;
+  color: #666;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+.nota-transversal strong {
+  font-weight: 600;
+}
+</style>
+			
+                <p>Tras pasar de 27 a 26 electivos (al eliminar la duplicación del caso transversal) y desagregarlos por subgrupo, se observa que la transversalidad entre menciones no se distribuye de forma pareja: se concentra en 9 de los 12 subgrupos posibles, con Diseño Social y Metodologías Inclusivas liderando con 5 electivos, mientras que los otros 3 subgrupos no tienen ningún electivo compartido entre Industrial/Servicios y Visual/Multimedial.</p>
 
 			<h4>Dentro de los electivos disponibles para ambas menciones, ¿en qué subrgrupo se concentran y cuáles están menos representadas?</h4>
 			<figure>

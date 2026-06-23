@@ -56,7 +56,6 @@
 </script>
 <canvas id="otro"></canvas>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
   const ctx2 = document.getElementById('otro').getContext('2d');
 
@@ -64,17 +63,19 @@
     type: 'bar',
     data: {
       labels: [
-        'Estrategia, Gestión y Valor Económico',
-        'Territorio, Ciudadanía y Hábitat Sostenible',
-        'Morfología, Percepción y Lenguajes Visuales',
-        'Tecnología Aplicada, Proyectos y Nuevos Medios',
-        'Patrimonio, Cultura y Pensamiento Crítico',
-        'Innovación Social y Procesos Participativos',
-        'Comunicación Estratégica, Datos y Fotografía'
+        'Diseño Social y Metodologías Inclusivas',
+        'Patrimonio e Identidades Locales',
+        'Estrategia y Gestión de Valor',
+        'Percepción y Semiótica',
+        'Experimentación y Crítica',
+        'Hábitat y Diseño Regenerativo',
+        'Ética y Políticas del Diseño',
+        'Biomateriales y Ciclo de Vida',
+        'Interacción y Experiencia'
       ],
       datasets: [{
         label: 'Electivos de Ambas Menciones (Paso 3)',
-        data: [5, 5, 4, 3, 3, 2, 1],
+        data: [5, 4, 4, 3, 3, 3, 2, 1, 1],
         backgroundColor: '#6DBF8A'
       }]
     },

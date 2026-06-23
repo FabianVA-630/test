@@ -58,9 +58,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-  const ctx = document.getElementById('otro').getContext('2d');
+  const ctx2 = document.getElementById('otro').getContext('2d');
 
-  new Chart(ctx, {
+  new Chart(ctx2, {
     type: 'bar',
     data: {
       labels: [

@@ -6,6 +6,7 @@
         <title>Electivos UChile</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/>
         <link href="style.css" rel="stylesheet"/>
   
     </head>
@@ -56,11 +57,68 @@
             </figure>
 			<p>El gráfico anterior mostró cómo se distribuyen los electivos por mención dentro de cada área temática. Sin embargo, ese análisis solo cubre una parte del catálogo, por lo que no se clasificó la totalidad de los 171 electivos disponibles, sino que tomó muestras ejemplificadoras para representar cada subgrupo, lo que dejó solo 75 electivos efectivamente asignados a una de las cuatro áreas temáticas.</p>
 			
-<p>Esto significa que 109 electivos, que representa el 60% del catálogo, quedaron sin ninguna agrupación temática formal. De ellos, 44 pertenecen a la Mención Industrial y de Servicios, 41 a la Mención Visual y Multimedial, y 24 son electivos disponibles para ambas menciones.</p>
-			
+<table class="tabla-resumen">
+  <thead>
+    <tr>
+      <th>Categoría</th>
+      <th>Cantidad</th>
+      <th>% del catálogo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mención I y S</td>
+      <td>44</td>
+      <td>24%</td>
+    </tr>
+    <tr>
+      <td>Mención V y M</td>
+      <td>41</td>
+      <td>23%</td>
+    </tr>
+    <tr>
+      <td>Ambas menciones</td>
+      <td>24</td>
+      <td>13%</td>
+    </tr>
+    <tr class="fila-total">
+      <td>Total sin clasificar</td>
+      <td>109</td>
+      <td>60%</td>
+    </tr>
+  </tbody>
+</table>
+
+<style>
+.tabla-resumen {
+  width: 100%;
+  max-width: 480px;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 1.5rem 0;
+}
+.tabla-resumen th {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: 500;
+  color: #555;
+}
+.tabla-resumen th:not(:first-child),
+.tabla-resumen td:not(:first-child) {
+  text-align: right;
+}
+.tabla-resumen td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.tabla-resumen .fila-total td {
+  font-weight: 600;
+  border-bottom: none;
+}
+</style>			
 <p>Este vacío de información es relevante para el análisis: no solo existe un desbalance entre las áreas que sí fueron definidas, sino que la mayoría de la oferta real del catálogo queda completamente fuera de cualquier clasificación temática, lo que limita cuánto se puede concluir sobre la estructura completa de la oferta.</p>
 			
-<p>El siguiente gráfico visualiza, uno por uno, los 75 electivos que sí cuentan con una agrupación lógica, mostrando a qué mención y a qué área temática pertenece cada uno individualmente.</p>
             <h4>¿A qué mención y a qué agrupación temática pertenece cada uno de los 75 electivos clasificados?</h4>
 			 <figure>
 <?xml version="1.0" encoding="utf-8"?>
